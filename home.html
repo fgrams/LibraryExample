@@ -1,0 +1,74 @@
+<!--Library Demo Program
+    HTML Portion
+    Frank Grams, July 2014
+    http://jsfiddle.net/fgrams/dTKqg/
+-->
+
+<body>
+    <!--Header-->
+    <div class="header">
+    <h1>Library</h1>
+    </div>
+    
+    <!--Book List-->
+    <pre><p id="bookList"></p></pre>
+    
+    <!--Help-->
+    <p id="helpText">
+        This is a demo program written for a programming assignment,
+        written by Frank Grams.
+        It is a simple program for keeping track of a number of books
+        on a set of shelves.
+        To exit help, click &quotBook List&quot or &quotShelf View&quot.
+        <br><br>
+        Books can be viewed in two ways. The &quotBook List&quot view
+        lists the entire set of books from all shelves. The &quotShelf
+        View&quot view lists the set of shelves, which can be selected
+        to view the books they contain.
+        All books must reside on a shelf. All edits to the sets of
+        shelves and books must be made in &quotShelf View&quot. If 
+        adding shelves or books, use the &quotText Entry&quot text box
+        to provide a name for the new shelf or book.<br><br>To
+        add a shelf, click &quotAdd Shelf&quot. To remove a shelf,
+        select a shelf and click &quotRemove Shelf&quot. Removing a shelf
+        removes all the books it contains. To add a book,
+        select a shelf and click &quotEnshelf&quot. To remove a book,
+        select a book and click &quotUnshelf&quot.
+    </p>
+    
+    <!--Shelves and Books-->
+    <!--Dev Note: shelfName items and shelf items must alternate.
+        Every shelfName must be followed by a shelf, even if empty.-->
+    <ul id="shelfCollection">
+    </ul>
+    
+    <!--Footer-->
+    <div class="footer">
+        <div class="button" id="addShelfButton">
+            <p class="buttonText">Add Shelf</p>
+        </div>
+        <div class="button" id="removeShelfButton">
+            <p class="buttonText">Remove Shelf</p>
+        </div>
+        <div class="button" id="enshelfButton">
+            <p class="buttonText">Enshelf</p>
+        </div>
+        <div class="button" id="unshelfButton">
+            <p class="buttonText">Unshelf</p>
+        </div>
+        <div class="button" id="bookListButton">
+            <p class="buttonText">Book List</p>
+        </div>
+        <div class="button" id="shelfViewButton">
+            <p class="buttonText">Shelf View</p>
+        </div>
+        <div class="button" id="helpButton">
+            <p class="buttonText">Help</p>
+        </div>
+            
+        <form>
+            <br>Text Entry: <input type="text" name="textInput"
+                id="textInput">
+        </form>
+    </div>
+</body>

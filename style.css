@@ -1,0 +1,111 @@
+/* Library Demo Program
+   CSS Portion
+   Frank Grams, July 2014
+   http://jsfiddle.net/fgrams/dTKqg/
+ */
+
+body {
+    font-family:sans-serif;
+    background-color:black;
+    color:white
+}
+
+div {
+    background-color:black;
+    border-color:white;
+    color:inherit
+}
+
+p {
+    color:inherit
+}
+
+li {
+    color:inherit
+}
+
+ul {
+    list-style-type:none
+}
+
+form {
+    float:left;
+    clear:both
+}
+
+pre {
+    font-size:16px
+}
+
+#bookList {
+    padding-bottom:250px;
+    padding-top:40px;
+    display:none
+}
+
+#helpText {
+    padding-bottom:250px;
+    padding-top:40px;
+    display:none
+}
+
+.header {
+    position:fixed;
+    border-bottom-style:solid;
+    border-bottom-width:2px;
+    width:100%;
+    top:0px;
+}
+
+.footer {
+    position:fixed;
+    border-top-style:solid;
+    border-top-width:2px;
+    padding:5px;
+    width:100%;
+    bottom:0px;
+}
+
+h1 {
+    text-align:center;
+    margin:5px;
+    background-color:inherit;
+}
+
+#shelfCollection {
+    float:left;
+    overflow:auto;
+    padding-bottom:250px;
+    padding-top:40px
+}
+
+.shelf {
+    overflow:auto;
+    display:none
+}
+
+.book {
+    /*Nothing*/
+}
+
+.selected {
+    background-color:white;
+    color:black
+}
+
+.button {
+    float:left;
+    height:25px;
+    width:125px;
+    border-style:solid;
+    border-width:2px;
+    border-radius:10px;
+    margin:2px
+}
+
+.buttonText {
+    position:relative;
+    text-align:center;
+    bottom:11px;
+    color:inherit
+}
